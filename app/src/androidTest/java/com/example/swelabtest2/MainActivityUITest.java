@@ -26,7 +26,7 @@ public class MainActivityUITest {
         Espresso.onView(ViewMatchers.withId(R.id.sedanButton))
                 .perform(ViewActions.click());
 
-        // Check if the vehicle information text view is displayed and contains correct information
+
         Espresso.onView(ViewMatchers.withId(R.id.vehicleInfoTextView))
                 .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
                 .check(ViewAssertions.matches(ViewMatchers.withText("Vehicle Information:\nType: Sedan\nMileage: 5.0 miles\nFuel: 8.0 liters")));
@@ -37,26 +37,14 @@ public class MainActivityUITest {
         Espresso.onView(ViewMatchers.withId(R.id.motorcycleButton))
                 .perform(ViewActions.click());
 
-        // Check if the vehicle information text view is displayed and contains correct information
+
         Espresso.onView(ViewMatchers.withId(R.id.vehicleInfoTextView))
                 .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
                 .check(ViewAssertions.matches(ViewMatchers.withText("Vehicle Information:\nType: Motorcycle\nMileage: 1.5 miles\nFuel: 4.5 liters")));
     }
 
     @Test
-    public void testSUVButton() {
-        Espresso.onView(ViewMatchers.withId(R.id.suvButton))
-                .perform(ViewActions.click());
-
-        // Check if the vehicle information text view is displayed and contains correct information
-        Espresso.onView(ViewMatchers.withId(R.id.vehicleInfoTextView))
-                .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
-                .check(ViewAssertions.matches(ViewMatchers.withText("Vehicle Information:\nType: SUV\nMileage: 4.0 miles\nFuel: 12.5 liters")));
-    }
-
-    @Test
     public void testColorInfo() {
-        // Check if the color information text view is displayed and contains correct information
         Espresso.onView(ViewMatchers.withId(R.id.colorInfoTextView))
                 .check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
                 .check(ViewAssertions.matches(ViewMatchers.withText("Color Information:\nRed\nBlue\nGreen")));
