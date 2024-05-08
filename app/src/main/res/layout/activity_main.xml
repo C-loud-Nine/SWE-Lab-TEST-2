@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/vehicleInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        android:text="Vehicle Information:"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/colorInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehicleInfoTextView"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:text="Color Information:"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/sedanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colorInfoTextView"
+        android:layout_marginTop="32dp"
+        android:text="Sedan"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"/>
+
+    <Button
+        android:id="@+id/motorcycleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colorInfoTextView"
+        android:layout_marginTop="32dp"
+        android:text="Motorcycle"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/suvButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colorInfoTextView"
+        android:layout_marginTop="32dp"
+        android:text="SUV"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"/>
+
+</RelativeLayout>
